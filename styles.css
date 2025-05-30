@@ -1,0 +1,111 @@
+/* General */
+body {
+  text-align: center;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  font-family: "Arvo", cursive;
+  margin: 0;
+  padding: 0;
+}
+
+/* Title */
+h1 {
+  font-size: 4rem;
+  color: #ffffff;
+  margin-top: 40px;
+  text-shadow: 4px 4px 0 #DA0463;
+}
+
+/* Instructions */
+.instructions {
+  color: #DBEDF3;
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+/* Drum Container */
+.set {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Drum Buttons */
+.drum {
+  border: 6px solid #404B69;
+  border-radius: 20px;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #DA0463;
+  text-shadow: 2px 2px #DBEDF3;
+  width: 120px;
+  height: 120px;
+  background-color: #ffffff;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+/* Background Images */
+.w {
+  background-image: url("images/tom1.png");
+}
+
+.a {
+  background-image: url("images/tom2.png");
+}
+
+.s {
+  background-image: url("images/tom3.png");
+}
+
+.d {
+  background-image: url("images/tom4.png");
+}
+
+.j {
+  background-image: url("images/snare.png");
+}
+
+.k {
+  background-image: url("images/crash.png");
+}
+
+.l {
+  background-image: url("images/kick.png");
+}
+
+/* Button Hover Effect */
+.drum:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+}
+
+/* Pressed Class for JavaScript */
+.pressed {
+  opacity: 0.6;
+  box-shadow: 0 3px 6px #DBEDF3;
+  transform: scale(0.95);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .drum {
+    width: 80px;
+    height: 80px;
+    font-size: 2rem;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  .instructions {
+    font-size: 1rem;
+  }
+}
